@@ -1,6 +1,6 @@
 @font-face {
     font-family: gameFont;
-    src: url(../font/inky-thin-pixels-font/InkyThinPixels-MlXn.ttf);
+    src: url(./font/inky-thin-pixels-font/InkyThinPixels-MlXn.ttf);
   }
 *{
     margin: 0;
@@ -23,7 +23,7 @@ html{
   display: none;
 }
 header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/giphy.gif) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/giphy.gif) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
