@@ -1,0 +1,273 @@
+@font-face {
+    font-family: gameFont;
+    src: url(../font/inky-thin-pixels-font/InkyThinPixels-MlXn.ttf);
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #000515;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    font-family: gameFont;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2.5px;
+    
+}
+ 
+.burger {
+  display: none;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/giphy.gif) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.img-header{
+    margin: 30px;
+}
+.header{
+    /* background-color: #050A3; */
+    padding: 10px 30px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.main-nav li{
+    margin: 10px 30px;
+    list-style-type: none;
+    
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;   
+}
+
+a{
+    color: #7EC8E3;
+    text-decoration: none;
+    transition: background-color 1.2s , border 1.2s , color 1.2s;        
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+
+    color: #7e90e3;
+    transition: color 1.2s;
+    
+}
+
+h1{
+    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 100px;
+    
+    
+}
+.story1{
+    text-align: center;
+    padding: 30px;
+}
+.story{
+  margin-left: auto;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+.game-text{
+    font-size: 30px;
+}
+.result{
+    
+    text-align: center;
+    padding: 20px;
+}
+.enter-the-numbers{
+    padding: 20px;
+    text-align: center;
+
+    
+    
+}
+input{
+    font-family: gameFont;
+    color: white;
+    width: 10%;
+    
+    background-color: #000515;
+    border: 10px solid #000C66;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size:600%;
+}
+input:link,
+input:visited{
+    
+    width: 10%;
+    transition: 1.2s;
+    
+}
+
+input:active,
+input:hover{
+    border: 3px solid #00277c;
+    border: 10px solid #00277c;
+    width: 15%;
+    transition: 1.2s;
+    
+}
+.btn2,
+.Btn{
+  font-family: gameFont;
+
+  margin: 8%;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  background-color: #000515;
+  border: 8px solid #00277c;
+
+  cursor: pointer;
+  position: relative;
+}
+.btn2:active,
+.btn2:hover,
+.Btn:active,
+.Btn:hover{
+  border: 3px solid #00277c;
+  border: 10px solid #00277c;
+  width: 210px;
+  transition: 1.2s;
+  text-align: center;
+  align-items: center;
+  
+}
+
+@media only screen and (max-width:700px){
+  .burger{
+    display: block;
+  }
+    
+    .img-header{
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        width: 90px;
+    }
+
+    .main-nav li{
+        display: none;
+    }
+    
+
+
+input{
+    font-family: gameFont;
+    color: white;
+    width: 30%;
+    
+    background-color: #000515;
+    border: 10px solid #000C66;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size:600%;
+}
+input:link,
+input:visited{
+    
+    width: 30%;
+    transition: 1.2s;
+    
+}
+
+input:active,
+input:hover{
+
+    border: 5px solid #00277c;
+    border: 10px solid #00277c;
+    width: 35%;
+    transition: 1.2s;
+   
+}
+
+    
+}
+
+
+
+  /* this is for the burger button */
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  #menu_checkbox {
+    display: none;
+  }
+  
+  label {
+    position: absolute;
+    right: 10px;
+    
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: -30px auto 0 auto;
+    cursor: pointer;
+  }
+  
+
+  label div {
+    position: relative;
+    top: 0;
+    height: 12px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    transition: 0.6s ease transform, 0.6s ease top, 0.6s ease width,
+      0.6s ease right;
+    border-radius: 2px;
+  }
+  
+  label div:first-child {
+    transform-origin: 0;
+  }
+  
+  label div:last-child {
+    margin-bottom: 0;
+    transform-origin: 60px;
+  }
+  
+  label div:nth-child(2) {
+    right: 0;
+    width: 60px;
+  }
+  
+  #menu_checkbox:checked + label:before {
+    background-color: #00277c, #000515;
+    float: right;
+  }
+  
+  #menu_checkbox:checked + label div:first-child {
+    top: -6px;
+    transform: rotateZ(45deg);
+  }
+  
+  #menu_checkbox:checked + label div:last-child {
+    top: 6px;
+    transform: rotateZ(45deg);
+  }
+  
+  #menu_checkbox:checked + label div:nth-child(2) {
+    width: 85px;
+    top: 0;
+    right: 13px;
+    transform: rotateZ(-45deg);
+  }
+
+  /* end of the burger button */
